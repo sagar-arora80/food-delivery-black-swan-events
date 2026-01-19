@@ -1,0 +1,3 @@
+:HL["/food-delivery-black-swan-events/_next/static/chunks/d4d17323b54a71f3.css","style"]
+:HL["/food-delivery-black-swan-events/_next/static/chunks/5f178f0651a87894.css","style"]
+0:{"buildId":"HxsksB-4JA-6sPvbqSw_b","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
