@@ -1,0 +1,100 @@
+.container {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    padding: 1.5rem;
+    height: fit-content;
+}
+
+.header {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+}
+
+.event {
+    position: relative;
+    padding-left: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.event:last-child {
+    padding-bottom: 0;
+}
+
+.line {
+    position: absolute;
+    left: 6px;
+    top: 8px;
+    bottom: 0;
+    width: 2px;
+    background-color: var(--border-light);
+}
+
+.event:last-child .line {
+    display: none;
+}
+
+.dot {
+    position: absolute;
+    left: 3px;
+    top: 6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--text-secondary);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.timeRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.timestamp {
+    font-size: 0.75rem;
+    color: var(--text-tertiary);
+    font-family: var(--font-mono);
+}
+
+.actor {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 2px 6px;
+    background-color: var(--bg-panel);
+    border-radius: 4px;
+}
+
+.action {
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: var(--text-primary);
+}
+
+.outcome {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.notes {
+    margin-top: 0.25rem;
+    padding: 0.5rem;
+    background-color: var(--color-amber-50);
+    border-left: 2px solid var(--color-amber-500);
+    font-size: 0.8rem;
+    font-style: italic;
+    color: var(--text-secondary);
+}

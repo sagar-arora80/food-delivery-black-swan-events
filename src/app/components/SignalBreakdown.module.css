@@ -1,0 +1,86 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+}
+
+.columnHeader {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.signalList {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.signalRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+.signalInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.signalName {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.signalMeta {
+    font-size: 0.75rem;
+    color: var(--text-tertiary);
+}
+
+.signalValueGroup {
+    text-align: right;
+}
+
+.signalValue {
+    display: block;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.signalTrend {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.textRed {
+    color: var(--color-red-600);
+}
+
+.textAmber {
+    color: var(--color-amber-600);
+}
+
+.textGreen {
+    color: var(--color-green-600);
+}
+
+.empty {
+    font-size: 0.85rem;
+    color: var(--text-tertiary);
+    font-style: italic;
+}

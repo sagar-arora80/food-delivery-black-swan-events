@@ -1,0 +1,49 @@
+.card {
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-light);
+    margin-bottom: 2rem;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.scoreGroup {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.score {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.band {
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: 0.05em;
+}
+
+.info {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.description {
+    max-width: 400px;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    text-align: right;
+}

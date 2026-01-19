@@ -1,0 +1,116 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerLeft {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.iconBtn {
+    background: transparent;
+    border: 1px solid var(--border-medium);
+    border-radius: 4px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+}
+
+.iconBtn:hover {
+    background: var(--bg-panel);
+    color: var(--text-primary);
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.controls {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    padding: 1.25rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.selected {
+    /* Border handled inline for dynamic focus */
+    box-shadow: 0 0 0 2px var(--text-primary);
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.cityName {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.lastUpdated {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.scoreRow {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.scoreBadge {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.trendInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.riskLabel {
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+}
+
+.trendArrow {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}

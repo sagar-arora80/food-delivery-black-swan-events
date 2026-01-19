@@ -1,0 +1,13 @@
+.layoutGrid {
+    display: grid;
+    height: 100vh;
+    overflow: hidden;
+    transition: grid-template-columns 0.3s ease;
+}
+
+.mainContent {
+    background-color: var(--bg-page);
+    padding: 2rem;
+    overflow-y: auto;
+    height: 100%;
+}

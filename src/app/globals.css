@@ -3,11 +3,11 @@
   --bg-page: #f8fafc;
   --bg-card: #ffffff;
   --bg-panel: #f1f5f9;
-  
+
   --text-primary: #0f172a;
   --text-secondary: #475569;
   --text-tertiary: #94a3b8;
-  
+
   --border-light: #e2e8f0;
   --border-medium: #cbd5e1;
 
@@ -22,7 +22,8 @@
   --color-amber-50: #fffbeb;
   --color-amber-100: #fef3c7;
   --color-amber-500: #f59e0b;
-  --color-amber-600: #d97706; /* Text readable on white */
+  --color-amber-600: #d97706;
+  /* Text readable on white */
 
   /* Red - Critical/Danger */
   --color-red-50: #fef2f2;
@@ -62,18 +63,35 @@ a {
 }
 
 /* Utilities */
-.text-red { color: var(--color-red-600); }
-.text-amber { color: var(--color-amber-600); }
-.text-green { color: var(--color-green-600); }
-.bg-red-light { background-color: var(--color-red-50); }
-.bg-amber-light { background-color: var(--color-amber-50); }
-.bg-green-light { background-color: var(--color-green-50); }
+.text-red {
+  color: var(--color-red-600);
+}
+
+.text-amber {
+  color: var(--color-amber-600);
+}
+
+.text-green {
+  color: var(--color-green-600);
+}
+
+.bg-red-light {
+  background-color: var(--color-red-50);
+}
+
+.bg-amber-light {
+  background-color: var(--color-amber-50);
+}
+
+.bg-green-light {
+  background-color: var(--color-green-50);
+}
 
 .card {
   background: var(--bg-card);
   border: 1px solid var(--border-light);
   border-radius: 8px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
 .btn {
@@ -102,6 +120,41 @@ a {
   background: transparent;
   color: var(--text-secondary);
 }
+
 .btn-ghost:hover {
   background: var(--bg-panel);
+}
+
+/* Layout Grid */
+.layout-grid {
+  display: grid;
+  grid-template-columns: 240px 1fr 300px;
+  /* Sidebar, Content, ActionPanel */
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main-content {
+  background-color: var(--bg-page);
+  padding: 2rem;
+  overflow-y: auto;
+  height: 100%;
+}
+
+/* Scrollbar styling for professional feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-medium);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-tertiary);
 }
